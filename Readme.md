@@ -1,8 +1,7 @@
 # Project Setup Guide
 
 # Install dependencies
-
-npm install
+    npm install
 
 # Create the environment file or replace the values in exisiting .env file with values you intend to use
     MONGO_URI=your_mongo_db_connection_string
@@ -10,8 +9,7 @@ npm install
     JWT_SECRET=your_jwt_secret
 
 # Start the application
-
-npm run start
+    npm run start
 
 # APIS
 
