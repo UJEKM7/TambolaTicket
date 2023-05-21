@@ -19,11 +19,10 @@ npm run start
 
 # 1. Create User API
 
-- - Endpoint: POST /api/user/register
+- Endpoint: POST /api/user/register
 
-- - Description: Register user with email and password. Returns user on successful creation.
-
-* - Request Body:
+- Description: Register user with email and password. Returns user on successful creation.
+- Request Body:
     Content-Type:applicaiton/json
     {
     "email": "your_email,
@@ -32,25 +31,25 @@ npm run start
 
 # 2. Login User API
 
-- - Endpoint: POST /api/user/login
+- Endpoint: POST /api/user/login
 
-- - Description: Login user with email and password. Returns token on the successful login.
+- Description: Login user with email and password. Returns token on the successful login.
 
-* - Request Body:
+-Request Body:
     Content-Type:applicaiton/json
     {
     "email": "your_email,
     "password:"your_password"
     }
-* - Header - Authorization: `Bearer ${your_token}`
+- Header - Authorization: `Bearer ${your_token}`
 
 # 3. Create Tambola Ticket Create API
 
-- - Endpoint: POST /api/tambola/tickets
+- Endpoint: POST /api/tambola/tickets
 
-* - Description: Create Tambola tickets with a variable number of tickets. Returns a unique ID on the creation of the ticket.
+- Description: Create Tambola tickets with a variable number of tickets. Returns a unique ID on the creation of the ticket.
 
-* - Request Body:
+- Request Body:
     Content-Type:applicaiton/json
     {
     "numberOfTickets": 5
@@ -58,13 +57,13 @@ npm run start
 
 # 4. Create Tambola Ticket Fetch API with id and Pagination
 
-- - Endpoint: GET /api/tambola/:id
+- Endpoint: GET /api/tambola/:id
 
-* - Description: Fetch all the ticket lists associated with the respective ID with pagination.
+- Description: Fetch all the ticket lists associated with the respective ID with pagination.
 
-* - Query Parameters:
+- Query Parameters:
     page (optional): Page number for pagination. Default value: 1.
     limit (optional): Number of tickets per page. Default value: 10.
 
-- - Example Request:
+- Example Request:
     GET /api/tambola/:id?page=1&limit=10
