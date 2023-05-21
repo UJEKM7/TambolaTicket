@@ -5,8 +5,7 @@
 npm install
 
 # Create the environment file or replace the values in exisiting .env file with values you intend to use
-
-- - MONGO_URI=your_mongo_db_connection_string
+    MONGO_URI=your_mongo_db_connection_string
     PORT=your_port
     JWT_SECRET=your_jwt_secret
 
